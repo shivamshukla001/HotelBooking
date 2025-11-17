@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/book.css">
+
+    <title>Book Your Room</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">SkyShot</h2>
+        <ul>
+            <button class="button"><b> <a href="index.html"> Home</a> </b></button>
+            <button class="button"><b> <a href="about.html"> About</a> </b></button>
+            <button class="button"> <b> <a href="Contact.html"> Contact</a> </b></button>
+            <button class="button"> <b> <a href="book.html"> Book Now</a> </b></button>
+        </ul>
+    </nav>
+
+
+    <!-- Banner -->
+
+    <main>
+        <h1 class="centered">Book Your Room</h1>
+        <p class="centered1">Experience Luxury Experience at SkyShot, Reserver Your Stay</p>
+        <img src="https://i.pinimg.com/1200x/e0/fa/1a/e0fa1a23942589c2e0b74478ea2e5d8d.jpg" alt="" srcset=""
+            class="banner1">
+        <img src="https://i.pinimg.com/1200x/6d/f0/7b/6df07b6dce62e55973f9374612818c2a.jpg" alt="" srcset=""
+            class="banner2">
+
+
+    </main>
+
+    <!-- Form -->
+    <div class="heading">
+        <h1>Reservation Details</h1>
+    </div>
+
+    <!-- Booking details -->
+    <form class="form" id="form1">
+        <p>Fill in Your details to complete your Booking </p>
+
+        <h1>Booking Details</h1>
+        <hr>
+
+        <div class="check">
+            <div>
+                <label for="date">Check-in Date</label><br>
+                <input type="date" name="checindate" style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+            <div>
+                <label for="date">Check-out Date</label> <br>
+                <input type="date" name="chekoutdate" style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+        <div class="check">
+            <div>
+                <label for="date">Number of Guests</label><br>
+                <input type="number" name="guests" placeholder="Number Of Peoples"
+                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
+            </div>
+
+            <div>
+                <label for="date">Adults</label> <br>
+                <input type="number" name="adults" placeholder="How Many Adults ?"
+                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
+            </div>
+            <div>
+                <label for="date">children</label> <br>
+                <input type="number" name="children" placeholder="If Any Children"
+                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+        <div class="check">
+            <div>
+                <label for="date">Room Types</label><br>
+                <input type="dropdown" name="room types" placeholder="Any Specific Room Type"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+            <div>
+                <label for="date">No. Of Rooms</label> <br>
+                <input type="number" name="noOfRooms" placeholder="How Many Rooms you Need?"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+    </form>
+
+    <!-- Guest information -->
+    <form class="form" id="form2">
+        <h1>Guest information</h1>
+        <hr>
+
+        <div class="check1">
+            <label for="date">Full Name</label><br>
+            <input type="text" name="fullName" placeholder="Please Enter Your Full Name"
+                style="padding: 10px; margin-top: 10px; width:98%; border-radius: 10px;">
+        </div>
+        <div class="check">
+
+            <div>
+                <label for="date">Email Address</label> <br>
+                <input type="email" name="Email" placeholder="please write down Your Email"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+            <div>
+                <label for="date">Phone No</label> <br>
+                <input type="text" name="phoneNo" placeholder="please write down Your Phone Details"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+        <div class="check">
+            <div>
+                <label for="date">Country</label> <br>
+                <input type="text" name="country" placeholder="Write Down Your Country Name"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+            <div>
+                <label for="date">City</label> <br>
+                <input type="text" name="city" placeholder="City Name Please"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+        </div>
+
+        <div class="check1">
+            <label for="date">Address</label><br>
+            <textarea class="name" name="address" placeholder="Enter Your Home Address or Appartment Address"
+                style="padding: 30px; border-radius: 10px; width: 94%;" name="email" id="email"></textarea>
+        </div>
+
+    </form>
+
+    <!-- Paytm method -->
+    <form class="form" id="form3">
+        <h1>Payment Method</h1>
+        <hr>
+        <h4>Select payment Method</h4>
+
+        <div class="cards">
+            <button class="btn"><b>Paypal</b></button>
+            <button class="btn"><b>Credit Card</b></button>
+            <button class="btn"><b>Paytm</b></button>
+            <button class="btn"><b>Cash on Arrival</b></button>
+
+        </div>
+
+        <div class="check">
+            <div>
+                <label for="date">Card Number</label><br>
+                <input type="text" name="Card number" placeholder="Card Number"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+            <div>
+                <label for="date">Card Holder name</label> <br>
+                <input type="text" name="holderName" placeholder="Card Owner Name"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+        <div class="check">
+            <div>
+                <label for="date">Expire Date</label><br>
+                <input type="date" name="expireDate" placeholder="Card Expiring Date"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+            <div>
+                <label for="date">Cvv</label> <br>
+                <input type="text" name="cvv" placeholder="CVV Number"
+                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            </div>
+
+        </div>
+
+
+    </form>
+
+    <!-- Additional service -->
+    <form class="form" id="form4">
+        <h1>Additional Services</h1>
+        <hr>
+        <h4>Select Additional Services</h4>
+        <div class="checkyou">
+            <div class="checkbox">
+                <input type="checkbox"  id="mycheckbox">
+                <label for="mycheckbox">Airport Pickup</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">Breakfast include </label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">Playground include</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">dinner include</label>
+            </div>
+        </div>
+
+        <div class="checkyou">
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">Gym Access</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">Laundary include</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">Hot Shower</label>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="mycheckbox">
+                <label for="mycheckbox">24/7 room service</label>
+            </div>
+        </div>
+
+        <h4 style="margin-top: 5rem;">Special Request</h4>
+
+        <textarea name="textarea" id=""
+            style=" padding:40px; width: 90%; border-radius: 10px;">Any Additional thing You want to Add!</textarea>
+
+        <h4 style="margin-top: 3rem;">Upload Id Proof</h4>
+        <input type="file" name="file" id="filename"
+            style="padding: 10px 20px; border:3px dotted greenyellow ; border-radius: 10px; width: 90%; gap: 10px;">
+        <p>Accepted Formats: .jpg, .jpeg, .png</p>
+    </form>
+
+    <form class="form" id="form5">
+        <div class="checkbox">
+            <input type="checkbox" id="mycheckbox"><br>
+            <label for="mycheckbox">I accept <b style="color: cyan;"> All the Term and Conditions</b> And <b
+                    style="color: cyan;">Privacy Policy</b></label>
+        </div>
+        <div class="checkbox" style="margin-top: 30px;">
+            <input type="checkbox" id="mycheckbox"><br>
+            <label for="mycheckbox"><b>Subscribe to our newsletter for exclusive offer and update</b></label>
+        </div>
+    </form>
+
+    <!-- confirmation button -->
+    <div class="confirmbtn" type="submit">
+
+        <button class="confirmbtn1">Reset Form</button>
+        <button id="submitAll" type="button" class="confirmbtn2">Confirm Booking</button>
+    </div>
+
+    <div class="testimonials">
+        <div class="first">
+            <h2><i class="fa fa-life-buoy" aria-hidden="true"></i></h2>
+            <h3>Swiming pool</h3>
+            <p>“The crystal-clear swimming pool at Skyshot was the perfect place to relax and unwind after a long day.”
+            </p>
+        </div>
+        <div class="second">
+            <h2><i class="fa fa-bell" aria-hidden="true"></i></h2>
+            <h3>Room Service</h3>
+            <p>“The room service was quick, professional, and made my stay feel truly luxurious.”</p>
+        </div>
+        <div class="third">
+
+            <h2><i class="fa fa-wifi" aria-hidden="true"> </i></h2>
+            <h3>Free-Wifi</h3>
+            <p>“The free high-speed Wi-Fi kept me connected throughout my stay without any interruptions”</p>
+        </div>
+        <div class="fourth">
+            <h2><i class="fa fa-eye" aria-hidden="true"></i></h2>
+            <h3>Beach View</h3>
+            <p>“Waking up to the breathtaking beach view every morning was an unforgettable experience.”</p>
+        </div>
+        <div class="five">
+            <h2><i class="fa fa-cutlery" aria-hidden="true"></i></h2>
+            <h3>Restaurant</h3>
+            <p>“The restaurant served delicious meals with amazing ambiance, making every dining moment special.”</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <div class="footer">
+            <div>
+                <h2 class="">SkyShot Hotels</h2>
+                <ul>
+                    <button class="button"><b>Home</b></button>
+                    <button class="button"><b>About</b></button>
+                    <button class="button"><b>Contact</b></button>
+                </ul>
+            </div>
+
+
+
+            <div>
+
+                <h2 class="footer">All right are reserved By Shivam & Company</h2>
+            </div>
+            <ul class="footerLogo">
+                <h2><i class="fa fa-facebook" aria-hidden="true"> </i></h2>
+                <h2><i class="fa fa-twitter" aria-hidden="true"></i></h2>
+                <h2><i class="fa fa-instagram" aria-hidden="true"></i></h2>
+            </ul>
+
+        </div>
+    </footer>
+
+     <script>
+        document.getElementById("submitAll").addEventListener("click", function () {
+
+            const forms = document.querySelectorAll("form");
+            let allData = {};
+
+            forms.forEach((form, index) => {
+                const formData = new FormData(form);
+                const formValues = {};
+
+                for (const [key, value] of formData.entries()) {
+                    formValues[key] = value;
+                }
+
+                allData[`form_${index + 1}`] = formValues;
+            });
+
+            console.log("All Form Data:", allData);
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>
