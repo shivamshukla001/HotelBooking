@@ -261,7 +261,7 @@
     <!-- confirmation button -->
     <div class="confirmbtn" type="submit">
 
-        <button class="confirmbtn1">Reset Form</button>
+        <button class="confirmbtn1" id="resetAll">Reset Form</button>
         <button id="submitAll" type="button" class="confirmbtn2">Confirm Booking</button>
     </div>
 
@@ -330,19 +330,30 @@
             const forms = document.querySelectorAll("form");
             let allData = {};
 
-            forms.forEach((form, index) => {
-                const formData = new FormData(form);
-                const formValues = {};
+            forms.forEach((form, index)  =>  {
+                const formData = new   FormData(form);
+                const formValues = {}
 
-                for (const [key, value] of formData.entries()) {
+                for (const [key, value]   of formData.entries()) {
                     formValues[key] = value;
                 }
 
-                allData[`form_${index + 1}`] = formValues;
+                allData[`form_${index + 1}`]= formValues;
             });
 
             console.log("All Form Data:", allData);
         });
+
+
+        document.getElementById("resetAll").addEventListener("click", function () {
+              const forms = document.querySelectorAll("form");
+
+            forms.forEach((form) => {
+                form.reset();
+            });
+            
+        })
+
     </script>
 </body>
 
