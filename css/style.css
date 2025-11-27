@@ -13,9 +13,11 @@ nav{
 .logo{
     font-size: 30px;
     color: rgb(229, 230, 190);
+    text-decoration:none;
     margin: 10px 80px;
 
 }
+
  nav ul{
     /* list-style: none;  */
     display: flex;
@@ -25,7 +27,7 @@ nav{
      /* margin-left: auto; */
 }
 button a{
-    text-decoration:none;
+   
     color:rgb(229, 230, 190);
 }
 /* .button:hover {
@@ -39,10 +41,15 @@ button a{
     border: 2px solid rgb(229, 230, 190);
     color: rgb(229, 230, 190);
     cursor: pointer;
-    border-radius:10px
+    border-radius:10px;
     text-size: 20px;
-    
+     text-decoration:none;   
 } 
+
+.button:hover{
+    background-color: rgb(229, 230, 190);
+    color: rgb(28, 28, 29);
+}
 
 
 
@@ -60,7 +67,7 @@ main{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 60px;
-  color: rgb(229, 230, 190);
+  color: rgba(255, 247, 0, 1);
 
 }
 
@@ -139,10 +146,20 @@ main{
     justify-content:space-between;
   
 }
+.footer-section{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    /* margin-left:5rem; */
+}
 .footerLogo{
     /* position:Fixed; */
     position: sticky;
     display:flex;
+    text-align:center;
     gap:30px;
     margin-right: 5rem;
+}
+
+.footerbtn{
+ margin-left:20px;
 }

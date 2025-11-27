@@ -14,6 +14,7 @@ nav{
     font-size: 30px;
     color: rgb(229, 230, 190);
     margin: 10px 80px;
+    text-decoration:none;
 
 }
 nav ul{
@@ -30,10 +31,14 @@ nav ul{
     border: 2px solid rgb(229, 230, 190);
     color: rgb(229, 230, 190);
     cursor: pointer;
-    border-radius:10px
- 
+    border-radius:10px;
+    text-decoration:none;
     text-size: 20px;
     
+}
+.button:hover{
+    background-color: rgb(229, 230, 190);
+    color: rgb(28, 28, 29);
 }
 nav ul > button a{
     text-decoration:none;
@@ -55,7 +60,12 @@ nav ul > button a{
     margin-left:10rem;
     margin-top:2rem;
 }
+
 .name{
+     max-width: 35%;
+     min-width:35%;
+    max-height: fit-content;
+    min-height: fit-content;
     padding: 10px;
     width: 30rem;
     margin-top:10px;
@@ -101,7 +111,6 @@ nav ul > button a{
 
 
 
-/* Footer */
 
 .footer{
     /* position:Fixed; */
@@ -111,10 +120,20 @@ nav ul > button a{
     justify-content:space-between;
   
 }
+.footer-section{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    /* margin-left:5rem; */
+}
 .footerLogo{
     /* position:Fixed; */
     position: sticky;
     display:flex;
+    text-align:center;
     gap:30px;
     margin-right: 5rem;
+}
+
+.footerbtn{
+ margin-left:20px;
 }

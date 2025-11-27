@@ -14,13 +14,14 @@
 
     <!-- Navbar -->
     <nav>
-        <h2 class="logo">SkyShot</h2>
+        <a class="logo" href="index.html">SkyShot</a>
         <ul>
-            <button class="button"><b> <a href="index.html"> Home</a> </b></button>
-            <button class="button"><b> <a href="about.html"> About</a> </b></button>
-            <button class="button"> <b> <a href="Contact.html"> Contact</a> </b></button>
-            <button class="button"> <b> <a href="book.html"> Book Now</a> </b></button>
-        </ul>
+            <ul>
+                <a class="button" href="index.html">Home</a>
+                <a class="button" href="about.html">About</a>
+                <a class="button" href="Contact.html">Contact</a>
+                <a class="button" href="book.html">Book now</a>
+            </ul>
     </nav>
 
 
@@ -43,227 +44,209 @@
     </div>
 
     <!-- Booking details -->
-    <form class="form" id="form1">
-        <p>Fill in Your details to complete your Booking </p>
+    <form id="bookingForm" class="form">
 
-        <h1>Booking Details</h1>
-        <hr>
+        <!-- CARD 1: Booking Details -->
+        <div class="cardSection">
+            <p>Fill in Your details to complete your Booking</p>
+            <h1>Booking Details</h1>
+            <hr>
 
-        <div class="check">
-            <div>
-                <label for="date">Check-in Date</label><br>
-                <input type="date" name="checindate" style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            <div class="check">
+                <div>
+                    <label>Check-in Date</label><br>
+                    <input type="date" name="checkinDate" required
+                        style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px; cursor: pointer;">
+                </div>
+
+                <div>
+                    <label>Check-out Date</label><br>
+                    <input type="date" name="checkoutDate" required
+                        style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px; cursor: pointer;">
+                </div>
             </div>
 
-            <div>
-                <label for="date">Check-out Date</label> <br>
-                <input type="date" name="chekoutdate" style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            <div class="check">
+                <div>
+                    <label>Number of Guests</label><br>
+                    <input type="number" name="guests" required placeholder="Number Of Peoples"
+                        style="padding: 10px; cursor: pointer; margin-top: 10px; width: 230px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>Adults</label><br>
+                    <input type="number" name="adults" required placeholder="How Many Adults?"
+                        style="padding: 10px; cursor: pointer; margin-top: 10px; width: 230px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>Children</label><br>
+                    <input type="number" name="children" required placeholder="If Any Children"
+                        style="padding: 10px; cursor: pointer; margin-top: 10px; width: 230px; border-radius: 10px;">
+                </div>
             </div>
 
+            <div class="check mate">
+                <div>
+                    <label>Room Types</label><br>
+                    <input type="text" name="roomType" required placeholder="Any Specific Room Type"
+                        style="padding: 10px; margin-top: 10px; cursor: pointer; width: 300px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>No. Of Rooms</label><br>
+                    <input type="number" name="noOfRooms" required placeholder="How Many Rooms?"
+                        style="padding: 10px; cursor: pointer; margin-top: 10px;  width: 300px; border-radius: 10px;">
+                </div>
+            </div>
         </div>
+        <!-- END CARD 1 -->
 
-        <div class="check">
-            <div>
-                <label for="date">Number of Guests</label><br>
-                <input type="number" name="guests" placeholder="Number Of Peoples"
-                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
+
+
+        <!-- CARD 2: Guest Information -->
+        <div class="cardSection">
+            <h1>Guest Information</h1>
+            <hr>
+
+            <div class="check1">
+                <label>Full Name</label><br>
+                <input type="text" name="fullName" required placeholder="Please Enter Your Full Name"
+                    style="padding: 10px; margin-top: 10px; cursor: pointer; width: 98%; border-radius: 10px;">
             </div>
 
-            <div>
-                <label for="date">Adults</label> <br>
-                <input type="number" name="adults" placeholder="How Many Adults ?"
-                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
-            </div>
-            <div>
-                <label for="date">children</label> <br>
-                <input type="number" name="children" placeholder="If Any Children"
-                    style="padding: 10px; margin-top: 10px; width: 250px; border-radius: 10px;">
+            <div class="check">
+                <div>
+                    <label>Email Address</label><br>
+                    <input type="email" name="email" required placeholder="Enter Your Email"
+                        style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>Phone No</label><br>
+                    <input type="text" name="phone" required placeholder="Your Phone Number"
+                        style="padding: 10px; margin-top: 10px; width: 300px; cursor: pointer; border-radius: 10px;">
+                </div>
             </div>
 
+            <div class="check">
+                <div>
+                    <label>Country</label><br>
+                    <input type="text" name="country" required placeholder="Country Name"
+                        style="padding: 10px; margin-top: 10px; width: 300px; cursor: pointer; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>City</label><br>
+                    <input type="text" name="city" required placeholder="City Name"
+                        style="padding: 10px; margin-top: 10px; width: 300px; cursor: pointer; border-radius: 10px;">
+                </div>
+            </div>
+
+            <div class="check1">
+                <label>Address</label><br>
+                <textarea name="address" required placeholder="Enter Your Address"
+                    style="padding: 30px; border-radius: 10px; cursor: pointer; width: 94%;"></textarea>
+            </div>
         </div>
+        <!-- END CARD 2 -->
 
-        <div class="check">
-            <div>
-                <label for="date">Room Types</label><br>
-                <input type="dropdown" name="room types" placeholder="Any Specific Room Type"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+
+
+        <!-- CARD 3: Payment Method -->
+        <div class="cardSection">
+            <h1>Payment Method</h1>
+            <hr>
+
+            <h4>Select Payment Method</h4>
+            <div class="cards">
+                <button class="btn" type="button">Paypal</button>
+                <button class="btn" type="button">Credit Card</button>
+                <button class="btn" type="button">Paytm</button>
+                <button class="btn" type="button">Cash on Arrival</button>
             </div>
 
-            <div>
-                <label for="date">No. Of Rooms</label> <br>
-                <input type="number" name="noOfRooms" placeholder="How Many Rooms you Need?"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+            <div class="check">
+                <div>
+                    <label>Card Number</label><br>
+                    <input type="number" name="cardNumber" required placeholder="Card Number"
+                        style="padding: 10px; cursor: pointer; margin-top: 10px; width: 300px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>Card Holder Name</label><br>
+                    <input type="text" name="holderName" required placeholder="Card Owner Name"
+                        style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+                </div>
             </div>
 
+            <div class="check">
+                <div>
+                    <label>Expire Date</label><br>
+                    <input type="date" name="expireDate" required
+                        style="padding: 10px; cursor: pointer; margin-top: 10px; width: 300px; border-radius: 10px;">
+                </div>
+
+                <div>
+                    <label>CVV</label><br>
+                    <input type="text" name="cvv" required placeholder="CVV Number" minlength="3" maxlength="3"
+                        pattern="\d{3}" style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <!-- END CARD 3 -->
+
+
+
+        <!-- CARD 4: Additional Services -->
+        <div class="cardSection">
+            <h1>Additional Services</h1>
+            <hr>
+
+            <div class="checkyou">
+                <div class="checkbox"><input type="checkbox" name="airportPickup"> Airport Pickup</div>
+                <div class="checkbox"><input type="checkbox" name="breakfast"> Breakfast Included</div>
+                <div class="checkbox"><input type="checkbox" name="playground"> Playground Included</div>
+                <div class="checkbox"><input type="checkbox" name="dinner"> Dinner Included</div>
+            </div>
+
+            <div class="checkyou">
+                <div class="checkbox"><input type="checkbox" name="gym"> Gym Access</div>
+                <div class="checkbox"><input type="checkbox" name="laundry"> Laundry Included</div>
+                <div class="checkbox"><input type="checkbox" name="shower"> Hot Shower</div>
+                <div class="checkbox"><input type="checkbox" name="roomService"> 24/7 Room Service</div>
+            </div>
+
+            <h4 style="margin-top: 5rem;">Special Request</h4>
+            <textarea name="specialRequest"
+                style="padding: 40px; width: 90%; border-radius: 10px;">Any Additional thing You want to Add!</textarea>
+
+            <h4 style="margin-top: 3rem;">Upload ID Proof</h4>
+            <input type="file" name="idProof" accept=".jpg,.jpeg,.png"
+                style="padding: 10px 20px; border: 3px dotted greenyellow; border-radius: 10px; width: 90%; cursor: pointer;">
+            <p>Accepted Formats: .jpg, .jpeg, .png</p>
+
+            <div class="checkbox">
+                <input type="checkbox" required name="terms"> I accept <b style="color: cyan;">Terms & Conditions</b>
+                and <b style="color: cyan;">Privacy Policy</b>
+            </div>
+
+            <div class="checkbox" style="margin-top: 30px;">
+                <input type="checkbox" required name="newsletter"> Subscribe to our newsletter
+            </div>
+        </div>
+        <!-- END CARD 4 -->
+
+        <!-- Submit + Reset -->
+        <div class="confirmbtn">
+            <button type="reset" class="confirmbtn1">Reset Form</button>
+            <button type="submit" class="confirmbtn2">Confirm Booking</button>
         </div>
 
     </form>
 
-    <!-- Guest information -->
-    <form class="form" id="form2">
-        <h1>Guest information</h1>
-        <hr>
-
-        <div class="check1">
-            <label for="date">Full Name</label><br>
-            <input type="text" name="fullName" placeholder="Please Enter Your Full Name"
-                style="padding: 10px; margin-top: 10px; width:98%; border-radius: 10px;">
-        </div>
-        <div class="check">
-
-            <div>
-                <label for="date">Email Address</label> <br>
-                <input type="email" name="Email" placeholder="please write down Your Email"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-            <div>
-                <label for="date">Phone No</label> <br>
-                <input type="text" name="phoneNo" placeholder="please write down Your Phone Details"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-
-        </div>
-
-        <div class="check">
-            <div>
-                <label for="date">Country</label> <br>
-                <input type="text" name="country" placeholder="Write Down Your Country Name"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-            <div>
-                <label for="date">City</label> <br>
-                <input type="text" name="city" placeholder="City Name Please"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-        </div>
-
-        <div class="check1">
-            <label for="date">Address</label><br>
-            <textarea class="name" name="address" placeholder="Enter Your Home Address or Appartment Address"
-                style="padding: 30px; border-radius: 10px; width: 94%;" name="email" id="email"></textarea>
-        </div>
-
-    </form>
-
-    <!-- Paytm method -->
-    <form class="form" id="form3">
-        <h1>Payment Method</h1>
-        <hr>
-        <h4>Select payment Method</h4>
-
-        <div class="cards">
-            <button class="btn"><b>Paypal</b></button>
-            <button class="btn"><b>Credit Card</b></button>
-            <button class="btn"><b>Paytm</b></button>
-            <button class="btn"><b>Cash on Arrival</b></button>
-
-        </div>
-
-        <div class="check">
-            <div>
-                <label for="date">Card Number</label><br>
-                <input type="text" name="Card number" placeholder="Card Number"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-
-            <div>
-                <label for="date">Card Holder name</label> <br>
-                <input type="text" name="holderName" placeholder="Card Owner Name"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-
-        </div>
-
-        <div class="check">
-            <div>
-                <label for="date">Expire Date</label><br>
-                <input type="date" name="expireDate" placeholder="Card Expiring Date"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-
-            <div>
-                <label for="date">Cvv</label> <br>
-                <input type="text" name="cvv" placeholder="CVV Number"
-                    style="padding: 10px; margin-top: 10px; width: 300px; border-radius: 10px;">
-            </div>
-
-        </div>
 
 
-    </form>
-
-    <!-- Additional service -->
-    <form class="form" id="form4">
-        <h1>Additional Services</h1>
-        <hr>
-        <h4>Select Additional Services</h4>
-        <div class="checkyou">
-            <div class="checkbox">
-                <input type="checkbox"  id="mycheckbox">
-                <label for="mycheckbox">Airport Pickup</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">Breakfast include </label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">Playground include</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">dinner include</label>
-            </div>
-        </div>
-
-        <div class="checkyou">
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">Gym Access</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">Laundary include</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">Hot Shower</label>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="mycheckbox">
-                <label for="mycheckbox">24/7 room service</label>
-            </div>
-        </div>
-
-        <h4 style="margin-top: 5rem;">Special Request</h4>
-
-        <textarea name="textarea" id=""
-            style=" padding:40px; width: 90%; border-radius: 10px;">Any Additional thing You want to Add!</textarea>
-
-        <h4 style="margin-top: 3rem;">Upload Id Proof</h4>
-        <input type="file" name="file" id="filename"
-            style="padding: 10px 20px; border:3px dotted greenyellow ; border-radius: 10px; width: 90%; gap: 10px;">
-        <p>Accepted Formats: .jpg, .jpeg, .png</p>
-    </form>
-
-    <form class="form" id="form5">
-        <div class="checkbox">
-            <input type="checkbox" id="mycheckbox"><br>
-            <label for="mycheckbox">I accept <b style="color: cyan;"> All the Term and Conditions</b> And <b
-                    style="color: cyan;">Privacy Policy</b></label>
-        </div>
-        <div class="checkbox" style="margin-top: 30px;">
-            <input type="checkbox" id="mycheckbox"><br>
-            <label for="mycheckbox"><b>Subscribe to our newsletter for exclusive offer and update</b></label>
-        </div>
-    </form>
-
-    <!-- confirmation button -->
-    <div class="confirmbtn" type="submit">
-
-        <button class="confirmbtn1" id="resetAll">Reset Form</button>
-        <button id="submitAll" type="button" class="confirmbtn2">Confirm Booking</button>
-    </div>
 
     <div class="testimonials">
         <div class="first">
@@ -299,60 +282,58 @@
     <!-- Footer -->
     <hr>
     <footer>
-        <div class="footer">
-            <div>
-                <h2 class="">SkyShot Hotels</h2>
-                <ul>
-                    <button class="button"><b>Home</b></button>
-                    <button class="button"><b>About</b></button>
-                    <button class="button"><b>Contact</b></button>
-                </ul>
-            </div>
-
-
-
-            <div>
-
-                <h2 class="footer">All right are reserved By Shivam & Company</h2>
-            </div>
-            <ul class="footerLogo">
-                <h2><i class="fa fa-facebook" aria-hidden="true"> </i></h2>
-                <h2><i class="fa fa-twitter" aria-hidden="true"></i></h2>
-                <h2><i class="fa fa-instagram" aria-hidden="true"></i></h2>
+    <div class="footer">
+        
+        <div >
+            <h2>SkyShot Hotels</h2>
+            <ul>
+                <button class="button footerbtn"><b>Home</b></button>
+                <button class="button footerbtn"><b>About</b></button>
+                <button class="button footerbtn"><b>Contact</b></button>
             </ul>
-
         </div>
-    </footer>
 
-     <script>
-        document.getElementById("submitAll").addEventListener("click", function () {
+        <div class="footer-section">
+            <h2>Copyright &copy; 2025 SkyShot. All rights reserved.</h2>
+        </div>
 
-            const forms = document.querySelectorAll("form");
-            let allData = {};
+        <ul class="footerLogo footer-section">
+            <h2><i class="fa fa-facebook" aria-hidden="true"></i></h2>
+            <h2><i class="fa fa-twitter" aria-hidden="true"></i></h2>
+            <h2><i class="fa fa-instagram" aria-hidden="true"></i></h2>
+        </ul>
 
-            forms.forEach((form, index)  =>  {
-                const formData = new   FormData(form);
-                const formValues = {}
+    </div>
+</footer>
 
-                for (const [key, value]   of formData.entries()) {
-                    formValues[key] = value;
-                }
 
-                allData[`form_${index + 1}`]= formValues;
-            });
+    <script>
+        const bookingForm = document.getElementById('bookingForm');
 
-            console.log("All Form Data:", allData);
+       
+        bookingForm.addEventListener('submit', function (event) {
+            event.preventDefault(); 
+
+            const formData = new FormData(event.target);
+
+            console.log("Form Details:");
+            for (let [name, value] of formData.entries()) {
+                console.log(`${name}: ${value}`);
+            }
+
+           
+
+            bookingForm.reset();
         });
 
 
-        document.getElementById("resetAll").addEventListener("click", function () {
-              const forms = document.querySelectorAll("form");
+        
+        const resetButton = document.querySelector('.confirmbtn1');
 
-            forms.forEach((form) => {
-                form.reset();
-            });
-            
-        })
+        resetButton.addEventListener('click', function () {
+
+              console.log("Form reset — all fields cleared.");
+        });
 
     </script>
 </body>
